@@ -13,7 +13,10 @@ though they can also return it to the same location if they'd like to just go fo
 Regardless, each bike can serve several users per day.
 
 ### Files used
-Include the files used
+Files used:
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
