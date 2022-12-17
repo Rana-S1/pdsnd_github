@@ -18,7 +18,7 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
-        city =input("Please enter the city name : " ).lower()
+        city =input("Please enter the CITY NAME : " ).lower()
         if city == 'chicago' or city == 'washington' or city == 'new york city' :
             break
         else:
@@ -43,7 +43,7 @@ def get_filters():
         else:
             print('Invalid input .. try again and chose: all, monday, tuesday, ... sunday')
 
-    print('-'*40)
+    print('*'*50)
     return city, month, day
 
 
@@ -165,7 +165,7 @@ def trip_duration_stats(df):
 
     # TO DO: display mean travel time
     mean_travel=df['Trip Duration'].mean()
-    print('mean travel time is = ',mean_travel)
+    print('mean travel time is = {} '.format(mean_travel))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -179,7 +179,7 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     count_user_type=df['User Type'].value_counts()
-    print('Counts of user types is:\n',count_user_type)
+    print('Counts of user types is:\n',format(count_user_type,',d'))
     print('\n')
     
     # TO DO: Display counts of gender
@@ -187,7 +187,7 @@ def user_stats(df):
         
         # Only access Gender column in this case
         count_gender=df['Gender'].value_counts()
-        print('Counts of gender is:\n',count_gender)
+        print('Counts of gender is:\n',format(count_gender,'8,d'))
         print('\n')
     
     else:
