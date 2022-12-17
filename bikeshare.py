@@ -43,7 +43,7 @@ def get_filters():
         else:
             print('Invalid input .. try again and chose: all, monday, tuesday, ... sunday')
 
-    print('-'*40)
+    print('*'*50)
     return city, month, day
 
 
